@@ -8,7 +8,6 @@ declare namespace Phaser.GameObjects {
       frame?: string | number
     ): import("../game/node/Node").default;
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     arrow(
       from: Phaser.GameObjects.Sprite,
       to: Phaser.GameObjects.Sprite
