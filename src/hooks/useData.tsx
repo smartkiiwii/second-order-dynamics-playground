@@ -10,7 +10,7 @@ const jsonified: NodeMeta[] = [
       parent: null,
       response: 0.001,
       dampen: 0.5,
-      eager: 1,
+      eager: 0,
     },
   },
   {
@@ -21,11 +21,11 @@ const jsonified: NodeMeta[] = [
       parent: {
         id: "21d250c0-bdf2-4d10-9a82-5443b0851c6a",
         offset: {
-          x: 100,
+          x: 0,
           y: 100,
         },
       },
-      response: 0.001,
+      response: 0.0005,
       dampen: 0.5,
       eager: 1,
     },
