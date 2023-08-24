@@ -189,7 +189,7 @@ export default class Node extends Phaser.GameObjects.Sprite {
     }
   }
 
-  public update(time: number, delta: number): void {
+  public update(_time: number, delta: number): void {
     super.update();
 
     if (this.arrow) {
