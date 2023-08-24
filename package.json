@@ -1,8 +1,9 @@
 {
-  "name": "tweeners",
-  "private": true,
+  "name": "second-order-dynamics-playground",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "repository": "https://github.com/smartkiiwii/second-order-dynamics-playground",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
