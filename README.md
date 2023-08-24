@@ -1,27 +1,9 @@
-# React + TypeScript + Vite
+# Second Order Dynamics Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Deployment](https://github.com/smartkiiwii/second-order-dynamics-playground/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/smartkiiwii/second-order-dynamics-playground/actions/workflows/build.yml)
 
-Currently, two official plugins are available:
+## Introduction
+This project is a quick implementation of [t3ssel8r](https://www.youtube.com/@t3ssel8r)'s Second order dynamics in Phaser 3. If you're following their [tutorial](https://www.youtube.com/watch?v=KPoeNZZ6H4s) on the topic, this implementation is what you get at the very end of the video. Aside from that, the site is built using Vite (ReactJS) in Typescript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Development
+Clone the repo and use `yarn` to install necessary dependencies, `yarn dev` to start the development server. See `package.json` for more commands.
