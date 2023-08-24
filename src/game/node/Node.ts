@@ -5,22 +5,22 @@ import { getNode } from "../game-scenes/MainScene";
 import Vector2 = Phaser.Math.Vector2;
 import Arrow from "../arrow/Arrow";
 
-export type ParentLink = {
+export interface ParentLink {
   id: string;
   offset: {
     x: number;
     y: number;
   };
-};
+}
 
-export type Meta = {
+export interface Meta {
   id: string;
   name: string;
   properties: DynamicsConfig & {
     parent: ParentLink | null;
     children: string[];
   };
-};
+}
 
 export default class Node extends Phaser.GameObjects.Sprite {
   private parent: { node: Node; link: ParentLink } | null;

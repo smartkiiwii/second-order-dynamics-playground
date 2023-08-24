@@ -41,7 +41,10 @@ export default class MainScene extends Phaser.Scene {
     // Delete nodes that are not in meta
     this.nodes.forEach((node, id) => {
       if (!meta.has(id)) {
-        node.selfDestruct();
+        node.selfDestruct().catch((reason) => {
+          console.error(reason);
+        });
+
         this.nodes.delete(id);
       }
     });

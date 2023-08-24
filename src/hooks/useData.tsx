@@ -92,21 +92,21 @@ export default function useData(): [Data, DataDispatch] {
   return [data, dispatchData];
 }
 
-export type AddOp = {
+export interface AddOp {
   type: "add";
   node: NodeMeta;
-};
+}
 
-export type RemoveOp = {
+export interface RemoveOp {
   type: "remove";
   id: string;
-};
+}
 
-export type UpdateOp = {
+export interface UpdateOp {
   type: "update";
   id: string;
   node: NodeMeta;
-};
+}
 
 export type Op = AddOp | RemoveOp | UpdateOp;
 export type Data = Map<string, NodeMeta>;

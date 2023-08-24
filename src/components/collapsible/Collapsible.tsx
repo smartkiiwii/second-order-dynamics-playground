@@ -16,13 +16,13 @@ export type CollapsibleRef = Ref<
   } & HTMLDivElement
 >;
 
-export type CollapsibleProps = {
+export interface CollapsibleProps {
   label?: string;
   initialCollapsed?: boolean;
   children: ReactNode;
   className?: string;
   onCollapse?: (isCollapsed: boolean) => void;
-};
+}
 
 const Collapsible = forwardRef(function Collapsible(
   props: CollapsibleProps,

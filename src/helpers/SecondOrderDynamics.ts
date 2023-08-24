@@ -3,7 +3,7 @@ import Vector2 = Phaser.Math.Vector2;
 /**
  * The configuration for the second order dynamics instance
  */
-export type Config = {
+export interface Config {
   /**
    * The response rate of the dynamics.
    *
@@ -24,7 +24,7 @@ export type Config = {
    * Higher values will result in more overshoot and oscillation, negative values will result in anticipation.
    */
   eager: number;
-};
+}
 
 export default class SecondOrderDynamics {
   // previous input
